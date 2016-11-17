@@ -11,6 +11,24 @@ public class MaxProductSubArray {
 	  System.out.println("Maximum Sub array product is "+ maxSubarrayProduct(arr, arr.length));
 	    
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	private static int maxSubarrayProduct(int[] arr, int length) {
 		// TODO Auto-generated method stub

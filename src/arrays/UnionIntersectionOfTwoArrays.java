@@ -1,5 +1,7 @@
 package arrays;
 
+import java.util.HashSet;
+
 public class UnionIntersectionOfTwoArrays {
 	
 	public static void main(String args[])
@@ -10,6 +12,7 @@ public class UnionIntersectionOfTwoArrays {
 		 
 		  printUnion(arr1, arr2, arr1.length, arr2.length);
 		  printIntersection(arr1, arr2, arr1.length, arr2.length);
+		  printUnionUsingJavaAPIs(arr1,arr2);
 		
 	}
 
@@ -64,5 +67,35 @@ int i=0, j=0;
 		while(j<length2)
 			System.out.print(arr2[j++]+" ");
 	}
+	
+	private static void printUnionUsingJavaAPIs(int[] arr1, int[] arr2) {
+		
+		int interSectionArray[] ={0,0,0,0,0} ; 
+	HashSet hs = new HashSet<>();
+	
+	String biggerArray = "first";
+	if(arr1.length<arr2.length){
+		biggerArray = "second";
+	}
+	if("first".equalsIgnoreCase(biggerArray)){
+		for(int i=0; i<arr2.length; i++){
+			hs.add(arr2[i]);
+		}
+	}
+
+		int j=0;
+		for(int i=0; i<arr1.length; i++) {
+			if(!hs.add(arr1[i])){
+				interSectionArray[j++] = arr1[i];
+			} 
+			else {
+				hs.add(arr1[i]);
+			}
+		}
+	
+	int temp = 0 ;
+	temp = temp +1;
+	}
+	
 
 }

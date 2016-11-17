@@ -15,7 +15,7 @@ public class CheckDuplicatesWithinK {
 	}
 
 	private static boolean checkDuplicatesWithinK(int[] arr, int k) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stubk
 		HashSet hs =new HashSet();
 		for(int i=0;i<arr.length;i++)
 		{
